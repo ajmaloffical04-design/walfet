@@ -9,6 +9,7 @@ export function Logo({ className = "h-8 w-auto" }: { className?: string }) {
       width={160}
       height={40}
       priority
+      style={{ height: "auto" }}
       className={`object-contain ${className}`}
     />
   );
