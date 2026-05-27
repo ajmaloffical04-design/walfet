@@ -39,7 +39,7 @@ export default function Hero() {
             {navLinks.map((link) => (
               <a 
                 key={link}
-                href={`#${link.toLowerCase()}`}
+                href={link === 'Work' ? '/work' : `/#${link.toLowerCase()}`}
                 className="text-[12px] sm:text-[14px] font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 {link}
@@ -63,10 +63,10 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap items-center gap-4">
-              <a href="#contact" className="inline-flex items-center gap-2 text-[13px] font-medium text-white bg-blue-500 border border-blue-500 rounded-full px-5 py-2.5 hover:bg-blue-600 hover:border-blue-600 transition-all duration-200 group">
+              <a href="/#contact" className="inline-flex items-center gap-2 text-[13px] font-medium text-white bg-blue-500 border border-blue-500 rounded-full px-5 py-2.5 hover:bg-blue-600 hover:border-blue-600 transition-all duration-200 group">
                 Start a project
               </a>
-              <a href="#work" className="inline-flex items-center gap-1.5 text-[13px] font-medium text-gray-700 hover:text-gray-900 transition-colors group">
+              <a href="/work" className="inline-flex items-center gap-1.5 text-[13px] font-medium text-gray-700 hover:text-gray-900 transition-colors group">
                 See selected work
                 <span className="inline-block transition-transform duration-200 group-hover:translate-x-0.5">
                   →
