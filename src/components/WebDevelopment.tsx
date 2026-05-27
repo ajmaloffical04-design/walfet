@@ -4,7 +4,10 @@ import { ArrowUpRight, Play } from "lucide-react";
 
 export default function WebDevelopment() {
   return (
-    <section id="web-development" className="grid min-h-screen grid-cols-1 lg:grid-cols-2 overflow-hidden text-white font-sans bg-black">
+    <section id="web-development" className="relative grid min-h-screen grid-cols-1 lg:grid-cols-2 overflow-hidden text-white font-sans bg-black">
+      {/* Top white gradient to blend into previous section */}
+      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-paper via-paper/50 to-transparent pointer-events-none z-10" />
+
       {/* LEFT SIDE */}
       <div className="relative flex items-center justify-center min-h-[50vh] lg:min-h-screen bg-[#2da6ff]">
         <Image
