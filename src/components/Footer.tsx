@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-10 lg:flex-row lg:items-center lg:justify-between lg:px-10">
         {/* Brand identity */}
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
-          <Logo className="h-7 w-auto text-ink-strong" />
+          <Logo className="h-8 w-auto md:h-9 text-ink-strong" />
           <span className="hidden sm:inline text-border">|</span>
           <span className="text-sm text-ink/75 font-medium">Web & app development studio</span>
         </div>

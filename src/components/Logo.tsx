@@ -6,10 +6,9 @@ export function Logo({ className = "h-8 w-auto" }: { className?: string }) {
     <Image
       src="/assets/walfet-logo.png"
       alt="Walfet"
-      width={160}
-      height={40}
+      width={100}
+      height={25}
       priority
-      style={{ height: "auto" }}
       className={`object-contain ${className}`}
     />
   );
