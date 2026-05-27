@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { useInViewAnimation } from '@/hooks/useInViewAnimation';
 import { AboutButton } from './AboutButton';
