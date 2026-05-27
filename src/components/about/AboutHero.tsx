@@ -13,14 +13,14 @@ export default function AboutHero() {
         className={`font-mondwest text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#051A24] tracking-tight mb-4 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
         style={{ animationDelay: '0.1s' }}
       >
-        Viktor Oddy
+        Walfet
       </div>
 
       <div 
         className={`font-mono text-xs md:text-sm text-[#051A24] mb-2 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
         style={{ animationDelay: '0.2s' }}
       >
-        The creative studio of Viktor Oddy
+        The creative studio of Walfet
       </div>
 
       <h1 
@@ -36,13 +36,10 @@ export default function AboutHero() {
         style={{ animationDelay: '0.4s' }}
       >
         <p>
-          I spent seven years at Apple crafting products used by over a billion people. I founded Vortex Studio to bring that same level of thinking to innovators shaping what comes next.
+          Walfet is an AI-powered web and app development company specializing in intelligent digital solutions, custom websites, mobile applications, and ERP implementation.
         </p>
         <p>
-          The studio is deliberately small. I guide the creative vision on every project, backed by a veteran design crew that moves fast without cutting corners.
-        </p>
-        <p>
-          Projects start at $5,000 per month.
+          We build scalable, modern, and automation-driven platforms that help businesses accelerate growth and digital transformation.
         </p>
       </div>
 
