@@ -39,7 +39,7 @@ export default function Hero() {
             {navLinks.map((link) => (
               <a 
                 key={link}
-                href={link === 'Work' ? '/work' : `/#${link.toLowerCase()}`}
+                href={link === 'Work' ? '/work' : link === 'About' ? '/about' : `/#${link.toLowerCase()}`}
                 className="text-[12px] sm:text-[14px] font-medium text-gray-700 hover:text-gray-900 transition-colors duration-200"
               >
                 {link}
