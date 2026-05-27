@@ -9,7 +9,7 @@ export default function WebDevelopment() {
       <div className="relative flex items-center justify-center p-10 lg:p-16 bg-gradient-to-b from-[#2da6ff] to-[#7bc7ff]">
         <div className="relative w-full max-w-2xl aspect-[4/3] lg:aspect-square">
           <Image
-            src="/assets/laptop_sky_hero.png"
+            src="/assets/laptop_sky_hero2.jpg"
             alt="Laptop Preview"
             fill
             className="object-contain"
