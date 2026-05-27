@@ -14,8 +14,8 @@ export default function Home() {
       {/* Search Engine Schema Structured JSON-LD Data */}
       <SchemaOrg />
 
-      {/* Sticky Header */}
-      <Header />
+      {/* Sticky Header - Commented out as new Hero has its own navbar */}
+      {/* <Header /> */}
 
       {/* Main Content Layout */}
       <main className="flex-grow">
