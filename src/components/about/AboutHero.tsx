@@ -3,6 +3,7 @@
 import React from 'react';
 import { useInViewAnimation } from '@/hooks/useInViewAnimation';
 import { AboutButton } from './AboutButton';
+import { Logo } from '@/components/Logo';
 
 export default function AboutHero() {
   const { ref, isInView } = useInViewAnimation();
@@ -10,10 +11,10 @@ export default function AboutHero() {
   return (
     <section ref={ref} className="mx-auto max-w-[440px] px-6 pt-12 md:pt-16 flex flex-col items-center text-center">
       <div 
-        className={`font-mondwest text-[32px] md:text-[40px] lg:text-[44px] font-semibold text-[#051A24] tracking-tight mb-4 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
+        className={`mb-4 ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
         style={{ animationDelay: '0.1s' }}
       >
-        Walfet
+        <Logo className="h-10 md:h-14 w-auto" />
       </div>
 
       <div 
