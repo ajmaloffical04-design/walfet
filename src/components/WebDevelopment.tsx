@@ -6,16 +6,14 @@ export default function WebDevelopment() {
   return (
     <section id="web-development" className="grid min-h-screen grid-cols-1 lg:grid-cols-2 overflow-hidden text-white font-sans bg-black">
       {/* LEFT SIDE */}
-      <div className="relative flex items-center justify-center p-10 lg:p-16 bg-gradient-to-b from-[#2da6ff] to-[#7bc7ff]">
-        <div className="relative w-full max-w-2xl aspect-[4/3] lg:aspect-square">
-          <Image
-            src="/assets/laptop_sky_hero2.jpg"
-            alt="Laptop Preview"
-            fill
-            className="object-contain"
-            priority
-          />
-        </div>
+      <div className="relative flex items-center justify-center min-h-[50vh] lg:min-h-screen bg-[#2da6ff]">
+        <Image
+          src="/assets/laptop_sky_hero2.jpg"
+          alt="Laptop Preview"
+          fill
+          className="object-cover"
+          priority
+        />
       </div>
 
       {/* RIGHT SIDE */}
