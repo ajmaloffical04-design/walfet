@@ -32,7 +32,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
-        <a href="#top" className="flex items-center" aria-label="Walfet — home">
+        <a href="/" className="flex items-center" aria-label="Walfet — home">
           <Logo className="h-8 w-auto md:h-9 text-ink-strong" />
         </a>
 
