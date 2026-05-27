@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Services() {
   return (
-    <section id="services" className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden flex flex-col justify-end pb-20 pt-32 md:pb-32">
+    <section id="services" className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden flex flex-col justify-end pb-20 pt-32 md:pb-32 rounded-t-[2.5rem] md:rounded-t-[3.5rem]">
       {/* Background Image */}
       <Image
         src="/assets/appdevelopment.png"
