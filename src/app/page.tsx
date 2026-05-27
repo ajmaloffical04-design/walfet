@@ -2,6 +2,7 @@ import React from "react";
 import SchemaOrg from "@/components/SchemaOrg";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import WebDevelopment from "@/components/WebDevelopment";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
 import About from "@/components/About";
@@ -21,6 +22,9 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <Hero />
+
+        {/* Web Development Hero Section */}
+        <WebDevelopment />
 
         {/* Services Section */}
         <Services />
