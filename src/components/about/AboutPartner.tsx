@@ -81,7 +81,7 @@ export default function AboutPartner() {
           <h2 className="font-mondwest text-[48px] md:text-[64px] lg:text-[80px] text-[#0D212C] mb-12 select-none">
             Partner with us
           </h2>
-          <AboutButton variant="primary" className="!pl-2 gap-3" href="https://halaskastudio.com/book">
+          <AboutButton variant="primary" className="!pl-2 gap-3" href="https://wa.me/917012535190">
             <img 
               src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=150" 
               alt="Viktor"

@@ -48,10 +48,10 @@ export default function AboutHero() {
         className={`flex flex-col sm:flex-row gap-3 md:gap-4 mt-5 md:mt-6 w-full ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
         style={{ animationDelay: '0.5s' }}
       >
-        <AboutButton variant="primary" className="w-full sm:w-auto">
+        <AboutButton variant="primary" className="w-full sm:w-auto" href="https://wa.me/917012535190">
           Start a chat
         </AboutButton>
-        <AboutButton variant="secondary" className="w-full sm:w-auto">
+        <AboutButton variant="secondary" className="w-full sm:w-auto" href="/work">
           View projects
         </AboutButton>
       </div>

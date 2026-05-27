@@ -29,7 +29,7 @@ export default function AboutPricing() {
               <span className="block text-[#E0EBF0] text-sm mt-1">Monthly</span>
             </div>
             <div className="flex flex-col gap-3">
-              <AboutButton variant="secondary" href="https://halaskastudio.com/book" className="w-full">
+              <AboutButton variant="secondary" href="https://wa.me/917012535190" className="w-full">
                 Start a chat
               </AboutButton>
               <AboutButton variant="tertiary" href="https://halaskastudio.com/book" className="w-full !bg-transparent !text-[#F6FCFF] border border-[#F6FCFF]/20 hover:!bg-white/10 shadow-none">
@@ -57,7 +57,7 @@ export default function AboutPricing() {
               <span className="block text-[#273C46] text-sm mt-1">Minimum</span>
             </div>
             <div className="flex flex-col gap-3">
-              <AboutButton variant="tertiary" className="w-full">
+              <AboutButton variant="tertiary" className="w-full" href="https://wa.me/917012535190">
                 Start a chat
               </AboutButton>
             </div>

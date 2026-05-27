@@ -7,7 +7,7 @@ export default function AboutFooter() {
     <footer className="w-full mx-auto max-w-[1200px] py-12 px-6 flex flex-col md:flex-row justify-between items-start md:items-end gap-12 font-neue-montreal">
       {/* Left side */}
       <div>
-        <AboutButton variant="primary">
+        <AboutButton variant="primary" href="https://wa.me/917012535190">
           Start a chat
         </AboutButton>
       </div>
