@@ -58,20 +58,13 @@ export default function AboutTestimonial() {
       </h2>
 
       <div 
-        className={`text-sm italic text-[#273C46] mb-12 font-neue-montreal ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
+        className={`text-sm italic text-[#273C46] mb-16 font-neue-montreal ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
         style={{ animationDelay: '0.3s' }}
       >
         Viktor Oddy
       </div>
 
-      <div 
-        className={`flex items-center justify-center gap-8 mb-16 text-slate-900 font-medium text-[24px] font-neue-montreal ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}
-        style={{ animationDelay: '0.4s' }}
-      >
-        <span className="w-[80px]">Apple</span>
-        <span className="w-[83px]">IDEO</span>
-        <span className="w-[110px]">Polygon</span>
-      </div>
+
 
       <div 
         className={`w-full max-w-xs relative overflow-hidden rounded-2xl shadow-lg ${isInView ? 'animate-fade-in-up' : 'opacity-0'}`}

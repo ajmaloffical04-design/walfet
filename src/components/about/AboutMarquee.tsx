@@ -16,7 +16,7 @@ const MARQUEE_IMAGES = [...IMAGES, ...IMAGES];
 
 export default function AboutMarquee() {
   return (
-    <div className="w-full mt-16 md:mt-20 mb-16 overflow-hidden bg-white py-4">
+    <div className="w-full mt-16 md:mt-20 mb-16 overflow-hidden bg-white py-4" style={{ WebkitMaskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)', maskImage: 'linear-gradient(to right, transparent, black 5%, black 95%, transparent)' }}>
       <div className="flex w-max animate-marquee">
         {MARQUEE_IMAGES.map((src, idx) => (
           <img

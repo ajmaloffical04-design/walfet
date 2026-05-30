@@ -61,7 +61,7 @@ export default function WebDevelopment() {
               Start a Project
             </a>
             <a 
-              href="#work" 
+              href="/work" 
               className="inline-flex items-center gap-3 bg-[#1677ff] text-white px-6 py-4 rounded-xl text-[17px] font-semibold transition-transform duration-300 hover:-translate-y-0.5"
             >
               <span className="flex items-center justify-center w-6 h-6 bg-white rounded-md text-[#1677ff]">
