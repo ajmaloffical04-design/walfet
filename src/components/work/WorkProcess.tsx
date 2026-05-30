@@ -99,60 +99,7 @@ export default function WorkProcess() {
         </div>
       </section>
 
-      {/* BENEFITS SECTION */}
-      <section className="pt-[110px] pb-[90px]">
-        <div className="w-[90%] max-w-[1300px] mx-auto">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start mb-[70px]">
-            <div>
-              <div className="text-[12px] uppercase tracking-[1px] text-gray-500 mb-5 flex items-center gap-2.5 font-medium">
-                <span className="w-2.5 h-2.5 rounded-full bg-gray-400"></span>
-                Benefits You'll Get
-              </div>
-            </div>
-            <h2 className="text-[36px] md:text-[44px] lg:text-[58px] leading-[1.05] font-normal tracking-[-0.04em] text-[#161616]">
-              Build Modern <br />
-              Digital Presence
-            </h2>
-            <p className="text-gray-600 leading-[1.9] text-[16px]">
-              We provide complete web solutions including domain setup,
-              hosting configuration, responsive development, SEO optimization,
-              and high-performance website delivery for businesses and brands.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-[22px] items-end">
-            <div className="rounded-[24px] overflow-hidden relative min-h-[280px] bg-[#161616] text-white p-[28px] flex flex-col justify-end">
-              <h4 className="text-[28px] mb-[14px] leading-[1.2] font-normal tracking-[-0.04em]">Fast <br/> Loading</h4>
-              <p className="text-[14px] leading-[1.8] text-gray-400">
-                Optimized websites with better speed,
-                performance, and smooth user experience.
-              </p>
-            </div>
-
-            <div className="rounded-[24px] overflow-hidden relative min-h-[280px] bg-[#ececf2]">
-              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df0855?q=80&w=1200&auto=format&fit=crop" alt="Coding laptop" className="w-full h-full object-cover absolute inset-0" />
-            </div>
-
-            <div className="rounded-[24px] overflow-hidden relative min-h-[280px] bg-white p-[28px] text-[#161616] flex flex-col justify-end border border-gray-200">
-              <h4 className="text-[28px] mb-[14px] leading-[1.2] font-normal tracking-[-0.04em]">SEO <br/> Friendly</h4>
-              <p className="text-[14px] leading-[1.8] text-gray-600">
-                Structured code and optimization
-                for better Google visibility.
-              </p>
-            </div>
-
-            <div className="rounded-[24px] overflow-hidden relative min-h-[280px] bg-[#ececf2]">
-              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt="Code screen" className="w-full h-full object-cover absolute inset-0" />
-            </div>
-
-            <div className="rounded-[24px] overflow-hidden relative min-h-[280px] bg-[#ececf2]">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Office desk" className="w-full h-full object-cover absolute inset-0" />
-            </div>
-          </div>
-
-        </div>
-      </section>
     </div>
   );
 }

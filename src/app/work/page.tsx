@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Star, Clock, Calendar, Play, ChevronLeft, ChevronRight } from "lucide-react";
 import { Inter } from "next/font/google";
 import WorkProcess from "@/components/work/WorkProcess";
@@ -104,6 +105,7 @@ export default function WorkPage() {
       {/* NEW SECTION ADDED AFTER HERO */}
       <WorkProcess />
       
+      <Footer />
     </div>
   );
 }
