@@ -1,6 +1,5 @@
-import React from "react";
+import React, { Suspense } from "react";
 import SchemaOrg from "@/components/SchemaOrg";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WebDevelopment from "@/components/WebDevelopment";
 import Services from "@/components/Services";
@@ -8,35 +7,48 @@ import Capabilities from "@/components/Capabilities";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
+// Lightweight skeleton shown while below-fold sections stream in
+function SectionSkeleton() {
+  return (
+    <div
+      className="w-full bg-gray-100 animate-pulse"
+      style={{ minHeight: "50vh" }}
+      aria-hidden="true"
+    />
+  );
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-paper text-ink flex flex-col selection:bg-ink-strong selection:text-paper antialiased">
-      {/* Search Engine Schema Structured JSON-LD Data */}
+      {/* Structured Data for SEO */}
       <SchemaOrg />
 
-      {/* Sticky Header - Commented out as new Hero has its own navbar */}
-      {/* <Header /> */}
-
-      {/* Main Content Layout */}
       <main className="flex-grow">
-        {/* Hero Section */}
+        {/* Above-the-fold — renders immediately, no Suspense */}
         <Hero />
 
-        {/* Web Development Hero Section */}
-        <WebDevelopment />
+        {/* Below-fold sections — streamed in as they resolve */}
+        <Suspense fallback={<SectionSkeleton />}>
+          <WebDevelopment />
+        </Suspense>
 
-        {/* Services Section */}
-        <Services />
+        <Suspense fallback={<SectionSkeleton />}>
+          <Services />
+        </Suspense>
 
-        {/* Capabilities Section */}
-        <Capabilities />
+        <Suspense fallback={<SectionSkeleton />}>
+          <Capabilities />
+        </Suspense>
 
-        {/* Contact Section */}
-        <Contact />
+        <Suspense fallback={<SectionSkeleton />}>
+          <Contact />
+        </Suspense>
       </main>
 
-      {/* Footer */}
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
