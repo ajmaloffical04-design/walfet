@@ -34,7 +34,7 @@ export default function AboutFooter() {
       
       <div className="w-full flex justify-center pt-8">
         <Image 
-          src="/assets/walfet-logo.png" 
+          src="/walfetlog.png" 
           alt="Walfet Logo" 
           width={1200} 
           height={300} 

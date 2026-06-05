@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WebDevelopment from "@/components/WebDevelopment";
 import Services from "@/components/Services";
+import Capabilities from "@/components/Capabilities";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -26,6 +27,9 @@ export default function Home() {
 
         {/* Services Section */}
         <Services />
+
+        {/* Capabilities Section */}
+        <Capabilities />
 
         {/* Contact Section */}
         <Contact />

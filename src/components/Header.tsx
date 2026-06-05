@@ -59,37 +59,36 @@ export default function Header() {
           </a>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="flex h-10 w-10 items-center justify-center rounded-md border border-border text-ink hover:text-ink-strong md:hidden"
-          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
-        >
-          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+        {/* Mobile Actions */}
+        <div className="flex items-center gap-3 md:hidden text-[15px] font-medium text-ink">
+          <a href="#contact" className="hover:text-ink-strong transition-colors py-2">
+            Get in touch
+          </a>
+          <div className="h-4 w-[1px] bg-ink/20"></div>
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="hover:text-ink-strong transition-colors py-2 pl-1 pr-2"
+            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileMenuOpen ? "Close" : "Menu"}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="absolute top-20 left-0 w-full border-b border-border/60 bg-paper p-6 shadow-lg md:hidden walfet-fade-up">
-          <nav className="flex flex-col gap-4">
+        <div className="absolute top-full left-0 w-full border-b border-border/60 bg-paper/90 backdrop-blur-xl p-6 shadow-sm md:hidden animate-in slide-in-from-top-2 fade-in duration-200">
+          <nav className="flex flex-col">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-base font-medium text-ink py-2 transition-colors hover:text-ink-strong border-b border-border/20 last:border-0"
+                className="block text-[18px] font-medium text-ink py-4 transition-colors hover:text-ink-strong border-b border-border/20 last:border-0"
               >
                 {link.label}
               </a>
             ))}
-            <a
-              href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="mt-2 flex h-11 items-center justify-center rounded-md bg-ink-strong text-sm font-medium text-paper transition-opacity hover:opacity-90"
-            >
-              Start a project
-            </a>
           </nav>
         </div>
       )}

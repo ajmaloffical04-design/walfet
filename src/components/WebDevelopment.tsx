@@ -5,8 +5,6 @@ import { ArrowUpRight, Play } from "lucide-react";
 export default function WebDevelopment() {
   return (
     <section id="web-development" className="relative grid min-h-screen grid-cols-1 lg:grid-cols-2 overflow-hidden text-white font-sans bg-black">
-      {/* Top white gradient to blend into previous section */}
-      <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-paper via-paper/50 to-transparent pointer-events-none z-10" />
 
       {/* LEFT SIDE */}
       <div className="relative flex items-center justify-center min-h-[50vh] lg:min-h-screen bg-[#2da6ff]">
@@ -28,16 +26,7 @@ export default function WebDevelopment() {
       >
         <div className="max-w-[620px] w-full">
           
-          {/* Top Badge */}
-          <div className="flex items-center gap-3 mb-10">
-            <div className="flex">
-              <Image src="https://i.pravatar.cc/100?img=1" alt="Avatar 1" width={42} height={42} className="rounded-full border-2 border-black object-cover" />
-              <Image src="https://i.pravatar.cc/100?img=2" alt="Avatar 2" width={42} height={42} className="rounded-full border-2 border-black object-cover -ml-2.5" />
-            </div>
-            <span className="text-[14px] font-semibold tracking-[0.5px] text-[#d9d9d9]">
-              200K+ CLIENTS
-            </span>
-          </div>
+
 
           {/* Headline */}
           <h1 className="text-5xl lg:text-[78px] leading-[0.95] font-light tracking-[-2px] lg:tracking-[-3px] mb-7">
