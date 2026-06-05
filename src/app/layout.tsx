@@ -46,6 +46,11 @@ export const metadata: Metadata = {
     images: ["https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/84af731d-c983-4da1-ba1d-f4c85586f779/id-preview-19a60a4c--6de3f859-1634-4b3e-a1e4-8d386514e563.lovable.app-1779781838363.png"],
   },
   authors: [{ name: "Walfet" }],
+  icons: {
+    icon: "/walfetfevicon.png",
+    shortcut: "/walfetfevicon.png",
+    apple: "/walfetfevicon.png",
+  },
 };
 
 export default function RootLayout({
