@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Star, Clock, Calendar, Play, ChevronLeft, ChevronRight } from "lucide-react";
 import { Inter } from "next/font/google";
-import WorkProcess from "@/components/work/WorkProcess";
+import WorkGallery from "@/components/work/WorkGallery";
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 
@@ -102,9 +102,8 @@ export default function WorkPage() {
         </div>
       </section>
 
-      {/* NEW SECTION ADDED AFTER HERO */}
-      <WorkProcess />
-      
+      <WorkGallery />
+
       <Footer />
     </div>
   );

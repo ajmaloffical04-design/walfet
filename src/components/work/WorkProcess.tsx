@@ -11,10 +11,10 @@ export default function WorkProcess() {
           <p className="text-gray-500">Simple Process, Professional Website Delivery</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           {/* Large Card */}
-          <div className="md:col-span-2 bg-white rounded-[30px] p-[35px] overflow-hidden flex flex-col md:flex-row justify-between items-center gap-[30px]">
+          <div className="md:col-span-2 lg:col-span-3 bg-white rounded-[30px] p-[35px] overflow-hidden flex flex-col md:flex-row justify-between items-center gap-[30px]">
             <div className="max-w-full md:max-w-[420px]">
               <span className="text-blue-600 font-semibold text-[14px]">01</span>
               <h3 className="text-[28px] my-[15px] text-gray-900">Domain & Hosting Setup</h3>
@@ -34,31 +34,42 @@ export default function WorkProcess() {
           {/* Card 02 */}
           <div className="bg-white rounded-[30px] p-[35px] overflow-hidden">
             <span className="text-blue-600 font-semibold text-[14px]">02</span>
+            <h3 className="text-[28px] my-[15px] text-gray-900">Logo & Branding</h3>
+            <p className="text-gray-500 leading-[1.7]">
+              We design professional logos and branding for your company to create a strong, memorable identity.
+            </p>
+
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?w=600" alt="Branding" className="w-full mt-[30px] rounded-[20px] object-cover h-[220px]" />
+          </div>
+
+          {/* Card 03 */}
+          <div className="bg-white rounded-[30px] p-[35px] overflow-hidden">
+            <span className="text-blue-600 font-semibold text-[14px]">03</span>
             <h3 className="text-[28px] my-[15px] text-gray-900">UI / UX Design</h3>
             <p className="text-gray-500 leading-[1.7]">
               Wireframes, layouts, typography, colors, and user experience
               planning to create a modern and engaging interface.
             </p>
 
-            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600" alt="Design" className="w-full mt-[30px] rounded-[20px] object-cover" />
+            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=600" alt="Design" className="w-full mt-[30px] rounded-[20px] object-cover h-[220px]" />
           </div>
 
-          {/* Card 03 */}
+          {/* Card 04 */}
           <div className="bg-white rounded-[30px] p-[35px] overflow-hidden">
-            <span className="text-blue-600 font-semibold text-[14px]">03</span>
+            <span className="text-blue-600 font-semibold text-[14px]">04</span>
             <h3 className="text-[28px] my-[15px] text-gray-900">Development & Integration</h3>
             <p className="text-gray-500 leading-[1.7]">
               Responsive development with HTML, CSS, JavaScript, CMS,
               CRM integration, APIs, and AI-powered features.
             </p>
 
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Development" className="w-full mt-[30px] rounded-[20px] object-cover" />
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Development" className="w-full mt-[30px] rounded-[20px] object-cover h-[220px]" />
           </div>
 
           {/* Bottom Large Card */}
-          <div className="md:col-span-2 bg-white rounded-[30px] p-[35px] overflow-hidden">
+          <div className="md:col-span-2 lg:col-span-3 bg-white rounded-[30px] p-[35px] overflow-hidden">
             <div className="max-w-full md:max-w-[420px]">
-              <span className="text-blue-600 font-semibold text-[14px]">04 - 05</span>
+              <span className="text-blue-600 font-semibold text-[14px]">05 - 06</span>
               <h3 className="text-[28px] my-[15px] text-gray-900">Testing, SEO & Launch</h3>
               <p className="text-gray-500 leading-[1.7]">
                 Performance optimization, SEO setup, security checks,
