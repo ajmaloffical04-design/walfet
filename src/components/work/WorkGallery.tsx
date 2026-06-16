@@ -108,11 +108,12 @@ const PROJECTS = [
   },
   {
     id: 6,
-    categoryId: 'crypto',
-    title: 'Orbit Web3',
-    description: 'The future of decentralized finance.',
-    image: 'https://images.unsplash.com/photo-1639762681485-074b7f4ec651?q=80&w=1000',
-    logo: 'https://images.unsplash.com/photo-1622630998477-20b41cd0e025?w=100',
+    categoryId: 'corporate',
+    title: 'Uventer Web',
+    description: 'Your trusted platform for seamless corporate event booking.',
+    image: '/assets/uventerweb.png',
+    logo: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=100',
+    isLong: true,
   }
 ];
 
