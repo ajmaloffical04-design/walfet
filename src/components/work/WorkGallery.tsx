@@ -90,11 +90,12 @@ const PROJECTS = [
   },
   {
     id: 4,
-    categoryId: 'ai',
-    title: 'Poetic',
-    description: 'Turn your business into software. AI that learns your rules.',
-    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=1000',
+    categoryId: 'e-commerce',
+    title: 'Zerci Wear',
+    description: 'Zerci Wear elevated essentials for the modern lifestyle.',
+    image: '/assets/zerci.png',
     logo: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=100',
+    isLong: true,
   },
   {
     id: 5,
