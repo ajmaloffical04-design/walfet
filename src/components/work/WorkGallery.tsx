@@ -72,11 +72,12 @@ const PROJECTS = [
   },
   {
     id: 2,
-    categoryId: 'hardware',
-    title: 'Creative Intelligence Company',
-    description: 'Hardware for human creativity.',
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000',
+    categoryId: 'e-commerce',
+    title: 'Regal Avenue',
+    description: 'Regal Avenue exquisite jewelry and engagement rings.',
+    image: '/assets/regalavenue.png',
     logo: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=100',
+    isLong: true,
   },
   {
     id: 3,
