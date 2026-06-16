@@ -81,11 +81,12 @@ const PROJECTS = [
   },
   {
     id: 3,
-    categoryId: 'ai',
-    title: 'River AI',
-    description: 'Intelligence that flows with you.',
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000',
-    logo: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=100',
+    categoryId: 'e-commerce',
+    title: 'Regal Avenue',
+    description: 'Regal Avenue exquisite jewelry and engagement rings.',
+    image: '/assets/regalavenue.png',
+    logo: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=100',
+    isLong: true,
   },
   {
     id: 4,
