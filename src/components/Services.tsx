@@ -7,7 +7,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden flex flex-col justify-end pb-20 pt-32 md:pb-32 rounded-t-[2.5rem] md:rounded-t-[3.5rem]"
+      className="relative min-h-[90vh] md:min-h-screen w-full overflow-hidden flex flex-col justify-end pb-20 pt-32 md:pb-32"
     >
       {/* Background Image — lazy loaded, well below the fold */}
       <Image
