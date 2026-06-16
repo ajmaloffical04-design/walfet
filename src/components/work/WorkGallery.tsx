@@ -100,10 +100,11 @@ const PROJECTS = [
   {
     id: 5,
     categoryId: 'corporate',
-    title: 'Biograph',
-    description: 'Act now, live longer. How Biograph works.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000',
+    title: 'ZTK Tyres',
+    description: 'ZTK Tyres high quality automotive products and services.',
+    image: '/assets/ztktyers.png',
     logo: 'https://images.unsplash.com/photo-1531297172867-1111166db22c?w=100',
+    isLong: true,
   },
   {
     id: 6,
