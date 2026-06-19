@@ -146,10 +146,9 @@ export default function ContactPage() {
                         defaultValue=""
                       >
                         <option value="" disabled className="text-ink/40">Select a budget range</option>
-                        <option value="10k-25k" className="text-ink bg-paper py-2">$10k - $25k</option>
-                        <option value="25k-50k" className="text-ink bg-paper py-2">$25k - $50k</option>
-                        <option value="50k-100k" className="text-ink bg-paper py-2">$50k - $100k</option>
-                        <option value="100k+" className="text-ink bg-paper py-2">$100k+</option>
+                        <option value="basic" className="text-ink bg-paper py-2">Basic</option>
+                        <option value="advance" className="text-ink bg-paper py-2">Advance</option>
+                        <option value="advance-pro" className="text-ink bg-paper py-2">Advance Pro</option>
                       </select>
                       <label 
                         htmlFor="budget" 
