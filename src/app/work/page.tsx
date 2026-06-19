@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Star, Clock, Calendar, Play, ChevronLeft, ChevronRight } from "lucide-react";
 import { Inter } from "next/font/google";
 import WorkGallery from "@/components/work/WorkGallery";
+import AboutBottomNav from "@/components/about/AboutBottomNav";
 
 const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "700"] });
 
@@ -105,6 +106,9 @@ export default function WorkPage() {
       <WorkGallery />
 
       <Footer />
+
+      {/* Floating bottom nav pill */}
+      <AboutBottomNav />
     </div>
   );
 }
