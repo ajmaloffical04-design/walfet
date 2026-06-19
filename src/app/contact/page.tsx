@@ -9,13 +9,33 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 export default function ContactPage() {
   const [formState, setFormState] = useState<"idle" | "submitting" | "success">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("submitting");
-    // Simulate network request
-    setTimeout(() => {
-      setFormState("success");
-    }, 1500);
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/ajmaloffical04@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(Object.fromEntries(formData)),
+      });
+      
+      if (response.ok) {
+        setFormState("success");
+      } else {
+        setFormState("idle");
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      setFormState("idle");
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   const containerVariants = {
@@ -110,6 +130,7 @@ export default function ContactPage() {
                       <input 
                         type="text" 
                         id="name" 
+                        name="name"
                         required
                         className="w-full bg-transparent border-b-2 border-ink/20 py-4 text-xl font-medium text-ink-strong placeholder-transparent focus:outline-none focus:border-ink-strong peer transition-colors"
                         placeholder="Your name"
@@ -126,6 +147,7 @@ export default function ContactPage() {
                       <input 
                         type="email" 
                         id="email" 
+                        name="email"
                         required
                         className="w-full bg-transparent border-b-2 border-ink/20 py-4 text-xl font-medium text-ink-strong placeholder-transparent focus:outline-none focus:border-ink-strong peer transition-colors"
                         placeholder="Your email"
@@ -141,6 +163,7 @@ export default function ContactPage() {
                     <div className="relative group">
                       <select 
                         id="budget" 
+                        name="budget"
                         required
                         className="w-full bg-transparent border-b-2 border-ink/20 py-4 text-xl font-medium text-ink-strong focus:outline-none focus:border-ink-strong transition-colors appearance-none cursor-pointer peer"
                         defaultValue=""
@@ -161,6 +184,7 @@ export default function ContactPage() {
                     <div className="relative group pt-4">
                       <textarea 
                         id="details" 
+                        name="details"
                         required
                         rows={4}
                         className="w-full bg-transparent border-b-2 border-ink/20 py-4 text-xl font-medium text-ink-strong placeholder-transparent focus:outline-none focus:border-ink-strong peer transition-colors resize-none"
