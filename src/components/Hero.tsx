@@ -8,7 +8,7 @@ const navLinks = [
   { label: "Services", href: "/service" },
   { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Hero() {
@@ -39,7 +39,7 @@ export default function Hero() {
         </nav>
 
         <Link
-          href="#contact"
+          href="/contact"
           className="hidden md:flex pointer-events-auto bg-gray-900 text-white px-5 h-11 items-center justify-center rounded-sm text-[14px] font-medium hover:bg-gray-800 transition-colors"
         >
           Get in touch

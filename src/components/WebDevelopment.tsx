@@ -47,7 +47,7 @@ export default function WebDevelopment() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 lg:gap-[18px]">
             <Link
-              href="#contact"
+              href="/contact"
               className="inline-flex items-center gap-3 bg-white text-black px-6 py-4 rounded-xl text-[17px] font-semibold transition-transform duration-300 hover:-translate-y-0.5"
             >
               <span className="flex items-center justify-center w-6 h-6 bg-black rounded-md text-white">

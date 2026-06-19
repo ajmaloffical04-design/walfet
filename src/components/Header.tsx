@@ -20,7 +20,7 @@ export default function Header() {
     { label: "Services", href: "/service" },
     { label: "Work", href: "/work" },
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/#contact" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -52,7 +52,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden items-center gap-4 md:flex">
           <a
-            href="#contact"
+            href="/contact"
             className="rounded-md bg-ink-strong px-5 py-2.5 text-sm font-medium text-paper transition-opacity hover:opacity-90 active:scale-[0.98]"
           >
             Start a project
@@ -61,7 +61,7 @@ export default function Header() {
 
         {/* Mobile Actions */}
         <div className="flex items-center gap-3 md:hidden text-[15px] font-medium text-ink">
-          <a href="#contact" className="hover:text-ink-strong transition-colors py-2">
+          <a href="/contact" className="hover:text-ink-strong transition-colors py-2">
             Get in touch
           </a>
           <div className="h-4 w-[1px] bg-ink/20"></div>

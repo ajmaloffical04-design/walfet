@@ -7,7 +7,7 @@ const navLinks = [
   { label: "Services", href: "/service" },
   { label: "Work", href: "/work" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function MobileMenuButton() {
@@ -17,7 +17,7 @@ export default function MobileMenuButton() {
     <>
       <div className="flex md:hidden items-center gap-3 pr-2 text-[14px] font-medium text-gray-900">
         <Link
-          href="#contact"
+          href="/contact"
           className="hover:opacity-70 transition-opacity py-2"
         >
           Get in touch

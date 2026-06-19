@@ -35,7 +35,7 @@ export default function Services() {
             seamless user experiences.
           </p>
           <Link
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-3 rounded-xl bg-white px-5 py-2.5 text-sm font-semibold text-ink-strong shadow-lg transition-transform hover:scale-105 active:scale-95"
           >
             Selected works

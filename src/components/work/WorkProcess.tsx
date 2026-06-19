@@ -104,7 +104,7 @@ export default function WorkProcess() {
 
         <div className="text-center mt-[60px]">
           <p className="mb-5 text-gray-500">Trusted by modern businesses worldwide</p>
-          <a href="#contact" className="inline-flex items-center gap-2.5 text-white bg-gray-900 px-7 py-4 rounded-full font-semibold transition-transform hover:-translate-y-1">
+          <a href="/contact" className="inline-flex items-center gap-2.5 text-white bg-gray-900 px-7 py-4 rounded-full font-semibold transition-transform hover:-translate-y-1">
             Start Your Project →
           </a>
         </div>
