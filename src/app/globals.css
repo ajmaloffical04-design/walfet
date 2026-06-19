@@ -1,21 +1,8 @@
 @import "tailwindcss";
 
 /* ─── Local Font Declarations ─────────────────────────────────────────────── */
-/* PP Neue Montreal — loaded from assets.website-files.com (Webflow CDN).
-   Using font-display: swap so text is always visible while font loads.
-   If you have local copies, place them in /public/fonts/ and update src below. */
-@font-face {
-  font-family: 'PP Neue Montreal';
-  src: url('https://assets.website-files.com/6009ec8cda7f305645c9d91b/60176f9bb43e36419997ecfe_PPNeueMontreal-Book.otf') format('opentype');
-  font-weight: 400;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'PP Neue Montreal';
-  src: url('https://assets.website-files.com/6009ec8cda7f305645c9d91b/60176f9b39c5673e51a86f5a_PPNeueMontreal-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-display: swap;
-}
+/* PP Neue Montreal removed — was loaded from external Webflow CDN (cross-origin penalty).
+   Now using self-hosted Manrope (via Next.js font) as the primary sans-serif. */
 @font-face {
   font-family: 'PP Mondwest';
   src: url('/PPMondwest-Regular.woff2') format('woff2');
@@ -129,7 +116,7 @@
 }
 
 .font-neue-montreal {
-  font-family: 'PP Neue Montreal', sans-serif;
+  font-family: var(--font-sans), 'Manrope', ui-sans-serif, system-ui, sans-serif;
 }
 
 /* ─── Animation Utilities ─────────────────────────────────────────────────── */
