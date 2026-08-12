@@ -16,15 +16,15 @@ import {
 } from 'lucide-react';
 
 const services = [
-  { title: "Business Website", icon: <Monitor className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Shopify / E-commerce", icon: <ShoppingCart className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Custom Dashboard", icon: <LayoutDashboard className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "CRM", icon: <Users className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Booking Platform", icon: <CalendarDays className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Event Management SaaS", icon: <Ticket className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Multi-Vendor Marketplace", icon: <Store className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Full SaaS Platform", icon: <Cloud className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
-  { title: "Enterprise-Level System", icon: <Shield className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> }
+  { title: "Business Website", icon: <Monitor className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Shopify / E-commerce", icon: <ShoppingCart className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Custom Dashboard", icon: <LayoutDashboard className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "CRM", icon: <Users className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Booking Platform", icon: <CalendarDays className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Event Management SaaS", icon: <Ticket className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Multi-Vendor Marketplace", icon: <Store className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Full SaaS Platform", icon: <Cloud className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> },
+  { title: "Enterprise-Level System", icon: <Shield className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-gray-500" /> }
 ];
 
 const navLinks = [
