@@ -2,7 +2,6 @@ import React from "react";
 import Header from "@/components/Header";
 import AboutHero from "@/components/about/AboutHero";
 import AboutMarquee from "@/components/about/AboutMarquee";
-import AboutPricing from "@/components/about/AboutPricing";
 import AboutPartner from "@/components/about/AboutPartner";
 import AboutFooter from "@/components/about/AboutFooter";
 import AboutCopyright from "@/components/about/AboutCopyright";
@@ -21,7 +20,6 @@ export default function AboutPage() {
       <main className="flex-grow pt-4">
         <AboutHero />
         <AboutMarquee />
-        <AboutPricing />
         <AboutPartner />
       </main>
 
