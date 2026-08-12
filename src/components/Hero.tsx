@@ -3,6 +3,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "./Logo";
 import MobileMenuButton from "./MobileMenuButton";
+import { 
+  Monitor, 
+  ShoppingCart, 
+  LayoutDashboard, 
+  Users, 
+  CalendarDays, 
+  Ticket, 
+  Store, 
+  Cloud, 
+  Shield
+} from 'lucide-react';
+
+const services = [
+  { title: "Business Website", icon: <Monitor className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Shopify / E-commerce", icon: <ShoppingCart className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Custom Dashboard", icon: <LayoutDashboard className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "CRM", icon: <Users className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Booking Platform", icon: <CalendarDays className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Event Management SaaS", icon: <Ticket className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Multi-Vendor Marketplace", icon: <Store className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Full SaaS Platform", icon: <Cloud className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> },
+  { title: "Enterprise-Level System", icon: <Shield className="w-[11px] h-[11px] md:w-[14px] md:h-[14px] text-[#0066ff]" /> }
+];
 
 const navLinks = [
   { label: "Services", href: "/service" },
@@ -65,12 +88,26 @@ export default function Hero() {
       <div className="w-full px-4 sm:px-6 md:px-8 max-w-[1600px] mx-auto">
         <div className="grid grid-cols-12 gap-2">
           <h1
-            className="col-span-12 xl:col-span-10 text-[24px] md:text-[64px] leading-[1.2] md:leading-[70px] tracking-[-0.03em] font-normal text-[#121212]"
+            className="col-span-12 xl:col-span-10 text-[24px] md:text-[64px] leading-[1.2] md:leading-[70px] tracking-[-0.03em] font-normal text-[#121212] mb-6 md:mb-10"
             style={{ textWrap: "balance" }}
           >
             <span className="opacity-50">Walfet</span> is a design and
             technology studio. We build digital products, from zero to launch.
           </h1>
+          
+          <div className="col-span-12 xl:col-span-10">
+            <div className="flex flex-wrap gap-2 md:gap-3">
+              {services.map((service, index) => (
+                <div 
+                  key={index} 
+                  className="flex items-center gap-1.5 md:gap-2.5 bg-white px-3 md:px-5 py-1.5 md:py-2.5 rounded-full shadow-sm hover:shadow-md transition-shadow cursor-default border border-gray-100"
+                >
+                  <span className="text-gray-800 font-medium text-[11px] md:text-[14px]">{service.title}</span>
+                  {service.icon}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

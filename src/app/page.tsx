@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import WebDevelopment from "@/components/WebDevelopment";
 import Services from "@/components/Services";
 import WorkProcess from "@/components/work/WorkProcess";
+import ProjectsWeDeliver from "@/components/work/ProjectsWeDeliver";
 import Capabilities from "@/components/Capabilities";
 import Clients from "@/components/Clients";
 import Contact from "@/components/Contact";
@@ -30,13 +31,17 @@ export default function Home() {
         {/* Above-the-fold — renders immediately, no Suspense */}
         <Hero />
 
-        {/* Below-fold sections — streamed in as they resolve */}
+
         <Suspense fallback={<SectionSkeleton />}>
           <WebDevelopment />
         </Suspense>
 
         <Suspense fallback={<SectionSkeleton />}>
           <Services />
+        </Suspense>
+
+        <Suspense fallback={<SectionSkeleton />}>
+          <ProjectsWeDeliver />
         </Suspense>
 
         <Suspense fallback={<SectionSkeleton />}>

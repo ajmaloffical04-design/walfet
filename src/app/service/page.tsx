@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import WebDevelopment from "@/components/WebDevelopment";
 import Services from "@/components/Services";
 import WorkProcess from "@/components/work/WorkProcess";
+import ProjectsWeDeliver from "@/components/work/ProjectsWeDeliver";
 
 // Lightweight skeleton shown while below-fold sections stream in
 function SectionSkeleton() {
@@ -32,8 +33,13 @@ export default function ServicePage() {
           <WebDevelopment />
         </Suspense>
 
+
         <Suspense fallback={<SectionSkeleton />}>
           <Services />
+        </Suspense>
+
+        <Suspense fallback={<SectionSkeleton />}>
+          <ProjectsWeDeliver />
         </Suspense>
 
         <Suspense fallback={<SectionSkeleton />}>
